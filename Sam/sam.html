@@ -3,39 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <title>Samseng Pedidos de venta</title>
+    <link rel="samcss" href="./sam.css">
   </head>
 
-  <body>
-  
-    <h1>SAMSENG</h1>
+  <form action="mailto" method="post">
 
-    <div>
-      <select name="localidad" id="localidad">
-        <option value="olavarria" selected>Olavarria</option>
-        <option value="tandil">Tandil</option>
-        <option value="trenquelauquen">Trenque Lauquen</option>
-      </select>
-    </div>
+    <body>
+  
+      <h1>SAMSENG</h1>
+
+      <div>
+        <select name="localidad" id="localidad">
+          <option value="olavarria" selected>Olavarria</option>
+          <option value="tandil">Tandil</option>
+          <option value="trenquelauquen">Trenque Lauquen</option>
+        </select>
+      </div>
 
 <br>
       
-    <div>
-      <select name="clientes" id="clientes"> <!-- script clientes por localidad -->
-        <option value="clienteLocalidad" selected>ClientexLocalidad</option>
-      </select>
-    </div>
+      <div>
+        <select name="clientes" id="clientes"> <!-- script clientes por localidad -->
+          <option value="clienteLocalidad" selected>ClientexLocalidad</option>
+        </select>
+      </div>
     
 <br>
     
-    <fieldset>
-      <legend>Higienico hoja simple</legend>
-      <label for="900">900</label>
-        <input type="number" id="900" name="900" min="0" step="1"> <!-- script incremento +/- 10 -->
-    
-    </fieldset>
+      <fieldset> <!-- script collapse fieldset -->
+        <legend>Higienico hoja simple</legend>
+          <div><label for="100" class="codigo">100</label>
+            <input type="number" id="100" name="100" min="0" step="1"></div><br>
+          <div><label for="105" class="codigo">105</label>
+            <input type="number" name="105" id="105" min="0" step="1"></div><br>
+          <div><label for="900" class="codigo">900</label>
+            <input type="number" name="900" id="900" min="0" step="1"></div><br>
+          <div><label for="901" class="codigo">901</label>
+            <input type="number" name="901" id="901" min="0" step="1"></div><br>
+          <div><label for="904" class="codigo">904</label>
+            <input type="number" name="904" id="904" min="0" step="1"></div><br>
+          <div><label for="916" class="codigo">916</label>
+            <input type="number" name="916" id="916" min="0" step="1"></div><br>
+          <div><label for="907" class="codigo">907</label>
+            <input type="number" name="907" id="907" min="0" step="1"></div><br>
+      
+          <!-- script input incremento +/- 10 -->
+      </fieldset>
 
 
-  </body>
+    </body>
 
+  </form>
 
 </html>
