@@ -2,11 +2,11 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Samseng Pedidos de venta</title>
+    <title>Samseng Pedidos</title>
     <link rel="stylesheet" type="text/css" href="./sam.css">
   </head>
 
-  <form action="mailto" method="post">
+  <form action="./orders/" method="post">
 
     <body>
   
@@ -31,28 +31,43 @@
 <br>
     
       <fieldset> <!-- script collapse fieldset -->
-        <legend>Higienico hoja simple</legend>
-          <div><label for="100" class="codigo">100</label>
-            <input type="number" id="100" name="100" min="0" step="1"></div><br>
-          <div><label for="105" class="codigo">105</label>
-            <input type="number" name="105" id="105" min="0" step="1"></div><br>
-          <div><label for="900" class="codigo">900</label>
-            <input type="number" name="900" id="900" min="0" step="1"></div><br>
-          <div><label for="901" class="codigo">901</label>
-            <input type="number" name="901" id="901" min="0" step="1"></div><br>
-          <div><label for="904" class="codigo">904</label>
-            <input type="number" name="904" id="904" min="0" step="1"></div><br>
-          <div><label for="916" class="codigo">916</label>
-            <input type="number" name="916" id="916" min="0" step="1"></div><br>
-          <div><label for="907" class="codigo">907</label>
-            <input type="number" name="907" id="907" min="0" step="1"></div><br>
-      
-          <!-- script input incremento +/- 10 -->
+        <legend id="hojaSimpleCollapser">Higienico hoja simple</legend>
+          <div id="hojaSimpleCollapsable">
+            <div><label for="100" class="codigo">100</label>
+              <input type="number" id="100" name="100" min="0" step="1"></div><br>
+            <div><label for="105" class="codigo">105</label>
+              <input type="number" name="105" id="105" min="0" step="1"></div><br>
+            <div><label for="900" class="codigo">900</label>
+              <input type="number" name="900" id="900" min="0" step="1"></div><br>
+            <div><label for="901" class="codigo">901</label>
+              <input type="number" name="901" id="901" min="0" step="1"></div><br>
+            <div><label for="904" class="codigo">904</label>
+              <input type="number" name="904" id="904" min="0" step="1"></div><br>
+            <div><label for="907" class="codigo">907</label>
+              <input type="number" name="907" id="907" min="0" step="1"></div><br>
+            <div><label for="908" class="codigo">908</label>
+              <input type="number" name="908" id="908" min="0" step="1"></div><br>
+            <div><label for="914" class="codigo">914</label>
+              <input type="number" name="914" id="914" min="0" step="1"></div><br>   
+            <div><label for="916" class="codigo">916</label>
+              <input type="number" name="916" id="916" min="0" step="1"></div><br>
+            <div><label for="919" class="codigo">919</label>
+              <input type="number" name="919" id="919" min="0" step="1"></div><br>
+          </div>
+      <!-- script input incremento +/- 10 -->
       </fieldset>
 
 
     </body>
 
-  </form>
+    <input type="submit">
 
+  </form>
+  
+<br>
+
+  <div><a href="../Zan/zan.html"><button>IR A ZANHANG</button></a></div>
+  <div><a href="../index.html"><button>VOLVER</button></a></div>
+
+<script src="../Sam/sam.js"></script>
 </html>
