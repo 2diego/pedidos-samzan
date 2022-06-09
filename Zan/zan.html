@@ -2,33 +2,108 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Zanhang Pedidos de venta</title>
+    <title>Zanhang Pedidos</title>
+    <link rel="stylesheet" type="text/css" href="./zan.css">
   </head>
 
-  <form action="mailto" method="post">
+  <form action="./orders/" method="post">
 
     <body>
     
       <h1>ZANHANG</h1>
 
       <div>
-          <select name="localidad" id="localidad">
-              <option value="olavarria" selected>Olavarria</option>
-              <option value="tandil">Tandil</option>
-              <option value="trenquelauquen">Trenque Lauquen</option>
-          </select>
+        <select name="localidad" id="localidad">
+          <option value="olavarria" selected>Olavarria</option>
+          <option value="tandil">Tandil</option>
+          <option value="trenquelauquen">Trenque Lauquen</option>
+        </select>
       </div>
 
-  <br>
+<br>
 
       <div>
-          <select name="clientes" id="clientes"> <!-- script clientes por localidad -->
-              <option value="clienteLocalidad" selected>ClientexLocalidad</option>
-          </select>
+        <select name="clientes" id="clientes"> <!-- script clientes por localidad -->
+          <option value="clienteLocalidad" selected>ClientexLocalidad</option>
+        </select>
       </div>
 
+<br>
+
+      <fieldset>
+        <legend id="megapackCollapser">COTTON MEGAPACK</legend>
+          <div id="megapackCollapsable">
+            <div><label for="p24" class="cotton">P 24</label>
+              <input type="number" name="p24" id="p24" min="0"></div><br>
+            <div><label for="m24" class="cotton">M 24</label>
+              <input type="number" name="m24" id="m24" min="0"></div><br>
+            <div><label for="g20" class="cotton">G 20</label>
+              <input type="number" name="g20" id="g20" min="0"></div><br>
+            <div><label for="xg18" class="cotton">XG 18</label>
+              <input type="number" name="xg18" id="xg18" min="0"></div><br>
+            <div><label for="xxg17" class="cotton">XXG 17</label>
+              <input type="number" name="xxg17" id="xxg17" min="0"></div><br>
+          </div>
+      </fieldset>
+<br>
+      <fieldset>
+        <legend id="hiperpackCollapser">COTTON HIPERPACK</legend>
+          <div id="hiperpackCollapsable">
+            <div><label for="p44" class="cotton">P 44</label>
+              <input type="number" name="p44" id="p44" min="0"></div><br>
+            <div><label for="m44" class="cotton">M 44</label>
+              <input type="number" name="m44" id="m44" min="0"></div><br>
+            <div><label for="g38" class="cotton">G 38</label>
+              <input type="number" name="g38" id="g38" min="0"></div><br>
+            <div><label for="xg32" class="cotton">XG 32</label>
+              <input type="number" name="xg32" id="xg32" min="0"></div><br>
+            <div><label for="xxg30" class="cotton">XXG 30</label>
+              <input type="number" name="xxg30" id="xxg30" min="0"></div><br>
+            </div>
+      </fieldset>
+<br>
+      <fieldset>
+        <legend id="pMegapackCollapser">PREMIUM COTTON MEGAPACK</legend>
+          <div id="pMegapackCollapsable">
+            <div><label for="p30" class="cotton">P 30</label>
+              <input type="number" name="p30" id="p30" min="0"></div><br>
+            <!-- <div><label for="m44" class="cotton">M 44</label>
+              <input type="number" name="m44" id="m44" min="0"></div><br>
+            <div><label for="g38" class="cotton">G 38</label>
+              <input type="number" name="g38" id="g38" min="0"></div><br>
+            <div><label for="xg32" class="cotton">XG 32</label>
+              <input type="number" name="xg32" id="xg32" min="0"></div><br>
+            <div><label for="xxg30" class="cotton">XXG 30</label>
+              <input type="number" name="xxg30" id="xxg30" min="0"></div><br>
+            </div> DESHABILITADO- NO SE PRODUCE -->
+      </fieldset>
+<br>
+      <fieldset>
+        <legend id="pHiperpackCollapser">PREMIUM COTTON HIPERPACK</legend>
+          <div id="pHiperpackCollapsable">
+            <!-- <div><label for="p44" class="cotton">P 44</label>
+              <input type="number" name="p44" id="p44" min="0"></div><br> DESHABILITADO - NO SE PRODUCE -->
+            <div><label for="m52" class="cotton">M 52</label>
+              <input type="number" name="m52" id="m52" min="0"></div><br>
+            <div><label for="g44" class="cotton">G 44</label>
+              <input type="number" name="g44" id="g44" min="0"></div><br>
+            <div><label for="xg36" class="cotton">XG 36</label>
+              <input type="number" name="xg36" id="xg36" min="0"></div><br>
+            <div><label for="xxg34" class="cotton">XXG 34</label>
+              <input type="number" name="xxg34" id="xxg34" min="0"></div><br>
+            </div>
+      </fieldset>
+
     </body>
+<br>
+    <div><input type="submit"></div>
 
   </form>
 
+<br>
+
+  <div><a href="../Sam/sam.html"><button>IR A SAMSENG</button></a></div>
+  <div><a href="../index.html"><button>VOLVER</button></a></div>
+
+<script src="../Zan/zan.js"></script>  
 </html>    
