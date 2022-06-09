@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(156, 146, 112);
+    text-align: center;
+}
+
+select {
+    width: 160px;
+    height: 35px;
+}
+
+option {
+    font-size: large;
+}
+
+fieldset {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;  
+    width: 85%;
+    border: 1px solid black;
+    padding: 3px 6px;
+    cursor: pointer;
+    display: inline-block;
+}
+  
+  legend::after {
+    content: "▼";
+    float: right;
+}
+
+.cotton {
+    font-weight: bold;
+    font-size: large;
+}
+  
+label {
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+}
+
+input {
+    align-items: center;
+    height: 20px;
+    width: 105px;
+}
+ 
