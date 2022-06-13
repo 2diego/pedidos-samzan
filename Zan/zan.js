@@ -57,3 +57,15 @@ window.addEventListener('load', () => {
   collapse();
   collapser.addEventListener('click', collapse);
 });
+
+window.addEventListener('click', () => {
+  function megapackP24(q, precio) {
+    q = Number(p24.value);
+    precio = 2584.47;
+    document.getElementById("precioMegapack").innerHTML = precio;
+    let sub = q * precio;
+    document.getElementById("subtotal").innerHTML = sub;
+    };
+
+    megapackP24();
+  });
