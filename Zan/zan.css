@@ -68,6 +68,7 @@ input {
     float: right;
     font-size: larger;
     margin: 5px;
+    background-color: white;
 }
 
 #localidad {
