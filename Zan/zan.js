@@ -1,3 +1,9 @@
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth();
+let year = date.getFullYear();
+document.getElementById("date").innerHTML = day + " / " + month + " / " + year;
+
 window.addEventListener('load', () => {
   const collapser = document.getElementById('hiperpackCollapser');
   const collapsable = document.getElementById('hiperpackCollapsable');
@@ -58,14 +64,28 @@ window.addEventListener('load', () => {
   collapser.addEventListener('click', collapse);
 });
 
-window.addEventListener('click', () => {
+p24.addEventListener('change' , () => {
   function megapackP24(q, precio) {
     q = Number(p24.value);
     precio = 2584.47;
-    document.getElementById("precioMegapack").innerHTML = precio;
+    document.getElementById("precioMP24").innerHTML = precio;
     let sub = q * precio;
-    document.getElementById("subtotal").innerHTML = sub;
+    document.getElementById("subtotalMP24").innerHTML = sub;
     };
 
     megapackP24();
   });
+
+  m24.addEventListener('change' , () => {
+    function megapackM24(q, precio) {
+      q = Number(m24.value);
+      precio = 2584.47;
+      document.getElementById("precioMM24").innerHTML = precio;
+      let sub = q * precio;
+      document.getElementById("subtotalMM24").innerHTML = sub;
+      };
+  
+      megapackM24();
+    });
+  
+
