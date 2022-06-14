@@ -9,7 +9,9 @@
   <form action="./orders/" method="post">
 
     <body>
-    
+
+      <div id="date">Dia/Mes/Ano</div>
+<br>
       <h1>ZANHANG</h1>
 
       <div>
@@ -19,9 +21,7 @@
           <option value="trenquelauquen">Trenque Lauquen</option>
         </select>
       </div>
-
 <br>
-
       <div>
         <select name="clientes" id="clientes"> <!-- script clientes por localidad -->
           <option value="clienteLocalidad" selected>ClientexLocalidad</option>
@@ -42,14 +42,14 @@
               <tr>
                 <th><label for="p24" class="cotton">P 24</label></th>
                 <th><input type="number" name="p24" id="p24" min="0"></th>
-                <th id="precioMegapack">2584.47</th>
-                <th id="subtotal"></th>
+                <th id="precioMP24">2584.47</th>
+                <th id="subtotalMP24"></th>
               </tr>
               <tr>
                 <th><label for="m24" class="cotton">M 24</label></th>
                 <th><input type="number" name="m24" id="m24" min="0"></th>
-                <th>$$$$</th>
-                <th>C x $</th>
+                <th id="precioMM24">2584.47</th>
+                <th id="subtotalMM24"></th>
               </tr>
               <tr>
                 <th><label for="g20" class="cotton">G 20</label></th>
@@ -80,54 +80,151 @@
 <br>
       <fieldset>
         <legend id="hiperpackCollapser">COTTON HIPERPACK</legend>
-          <div id="hiperpackCollapsable">
-            <div><label for="p44" class="cotton">P 44</label>
-              <input type="number" name="p44" id="p44" min="0"></div><br>
-            <div><label for="m44" class="cotton">M 44</label>
-              <input type="number" name="m44" id="m44" min="0"></div><br>
-            <div><label for="g38" class="cotton">G 38</label>
-              <input type="number" name="g38" id="g38" min="0"></div><br>
-            <div><label for="xg32" class="cotton">XG 32</label>
-              <input type="number" name="xg32" id="xg32" min="0"></div><br>
-            <div><label for="xxg30" class="cotton">XXG 30</label>
-              <input type="number" name="xxg30" id="xxg30" min="0"></div><br>
-            </div>
+          <table id="hiperpackCollapsable" border="1" cellpadding="3%">
+            <tr>
+              <th>Código</th>
+              <th>Cantidad</th>
+              <th>Precio x Bulto</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <th><label for="p44" class="cotton">P 44</label></th>
+              <th><input type="number" name="p44" id="p44" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="m44" class="cotton">M 44</label></th>
+              <th><input type="number" name="m44" id="m44" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="g38" class="cotton">G 38</label></th>
+              <th><input type="number" name="g38" id="g38" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="xg32" class="cotton">XG 32</label></th>
+              <th><input type="number" name="xg32" id="xg32" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="xxg30" class="cotton">XXG 30</label></th>
+              <th><input type="number" name="xxg30" id="xxg30" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th>Total cantidad:</th>
+              <th> Q </th>
+              <th>Total valor:</th>
+              <th>$$$$</th>
+            </tr>
+            </table>
       </fieldset>
 <br>
       <fieldset>
         <legend id="pMegapackCollapser">PREMIUM COTTON MEGAPACK</legend>
-          <div id="pMegapackCollapsable">
-            <div><label for="p30" class="premium">P 30</label>
-              <input type="number" name="p30" id="p30" min="0"></div><br>
-            <!-- <div><label for="m44" class="cotton">M 44</label>
-              <input type="number" name="m44" id="m44" min="0"></div><br>
-            <div><label for="g38" class="cotton">G 38</label>
-              <input type="number" name="g38" id="g38" min="0"></div><br>
-            <div><label for="xg32" class="cotton">XG 32</label>
-              <input type="number" name="xg32" id="xg32" min="0"></div><br>
-            <div><label for="xxg30" class="cotton">XXG 30</label>
-              <input type="number" name="xxg30" id="xxg30" min="0"></div><br>
-            </div> DESHABILITADO- NO SE PRODUCE -->
+          <table id="pMegapackCollapsable" border="1" cellpadding="3%">
+            <tr>
+              <th><label for="pP30" class="premium">P 30</label></th>
+              <th><input type="number" name="pP30" id="pP30" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <!-- <tr>
+              <th><label for="pM44" class="cotton">M 44</label></th>
+              <th><input type="number" name="pM44" id="pM44" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="pG38" class="cotton">G 38</label></th>
+              <th><input type="number" name="pG38" id="pG38" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="pXg32" class="cotton">XG 32</label></th>
+              <th><input type="number" name="pXg32" id="pXg32" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="pXxg30" class="cotton">XXG 30</label></th>
+              <th><input type="number" name="pXxg30" id="pXxg30" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr> DESHABILITADO- NO SE PRODUCE -->
+            <tr>
+              <th>Total cantidad:</th>
+              <th> Q </th>
+              <th>Total valor:</th>
+              <th>$$$$</th>
+            </tr>
+          </table>
       </fieldset>
 <br>
       <fieldset>
         <legend id="pHiperpackCollapser">PREMIUM COTTON HIPERPACK</legend>
-          <div id="pHiperpackCollapsable">
-            <!-- <div><label for="p44" class="cotton">P 44</label>
-              <input type="number" name="p44" id="p44" min="0"></div><br> DESHABILITADO - NO SE PRODUCE -->
-            <div><label for="m52" class="premium">M 52</label>
-              <input type="number" name="m52" id="m52" min="0"></div><br>
-            <div><label for="g44" class="premium">G 44</label>
-              <input type="number" name="g44" id="g44" min="0"></div><br>
-            <div><label for="xg36" class="premium">XG 36</label>
-              <input type="number" name="xg36" id="xg36" min="0"></div><br>
-            <div><label for="xxg34" class="premium">XXG 34</label>
-              <input type="number" name="xxg34" id="xxg34" min="0"></div><br>
-            </div>
+          <table id="pHiperpackCollapsable" border="1" cellpadding="3%">
+            <!-- <tr>
+              <th><label for="p44" class="cotton">P 44</label></th>
+              <th><input type="number" name="p44" id="p44" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr> DESHABILITADO - NO SE PRODUCE -->
+            <tr>
+              <th><label for="pM52" class="premium">M 52</label></th>
+              <th><input type="number" name="pM52" id="pM52" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="pG44" class="premium">G 44</label></th>
+              <th><input type="number" name="pG44" id="pG44" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="pXg36" class="premium">XG 36</label></th>
+              <th><input type="number" name="pXg36" id="pXg36" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th><label for="pXxg34" class="premium">XXG 34</label></th>
+              <th><input type="number" name="pXxg34" id="pXxg34" min="0"></th>
+              <th>$$$$</th>
+              <th>C x $</th>
+            </tr>
+            <tr>
+              <th>Total cantidad:</th>
+              <th> Q </th>
+              <th>Total valor:</th>
+              <th>$$$$</th>
+            </tr>
+            </table>
       </fieldset>
 
     </body>
 <br>
+    <fieldset>
+      <table>
+        <tr>
+          <th>Total cantidad:</th>
+          <th> Q </th>
+        </tr>
+        <tr>
+          <th>Total valor:</th>
+          <th>$$$$</th>
+        </tr>
+      </table>
+    </fieldset>
+    
     <div><input type="submit"></div>
 
   </form>
