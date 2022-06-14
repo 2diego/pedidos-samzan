@@ -1,6 +1,14 @@
 body {
     background-color: rgb(156, 146, 112);
     text-align: center;
+    background-image: url("https://media-exp1.licdn.com/dms/image/C4E0BAQF44IT_m9pLpg/company-logo_200_200/0/1611757273585?e=2147483647&v=beta&t=WOmJ1SHnjZk5jAiTiJsefbxSqEpEh5djI-ia8gWwvj8");
+}
+
+form {
+    border: solid 2px black;
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgb(236, 236, 236);
 }
 
 select {
@@ -49,3 +57,21 @@ input {
     width: 105px;
 }
  
+#clientes {
+    width: fit-content;
+    min-width: 80%;
+}
+
+#date {
+    border: solid 1px black;
+    display: inline;
+    float: right;
+    font-size: larger;
+    margin: 5px;
+}
+
+#localidad {
+    display: inline;
+    float: left;
+    margin: 0px auto 5px 10%;
+}
