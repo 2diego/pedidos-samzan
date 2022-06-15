@@ -33,49 +33,54 @@
       <fieldset>
         <legend id="megapackCollapser">COTTON MEGAPACK</legend>
           <table id="megapackCollapsable" border="1" cellpadding="3%">
-              <tr>
-                <th>Código</th>
-                <th>Cantidad</th>
-                <th>Precio x Bulto</th>
-                <th>Total</th>
-              </tr>
-              <tr>
-                <th><label for="p24" class="cotton">P 24</label></th>
-                <th><input type="number" name="p24" id="p24" min="0"></th>
-                <th id="precioMP24">2584.47</th>
-                <th id="subtotalMP24"></th>
-              </tr>
-              <tr>
-                <th><label for="m24" class="cotton">M 24</label></th>
-                <th><input type="number" name="m24" id="m24" min="0"></th>
-                <th id="precioMM24">2584.47</th>
-                <th id="subtotalMM24"></th>
-              </tr>
-              <tr>
-                <th><label for="g20" class="cotton">G 20</label></th>
-                <th><input type="number" name="g20" id="g20" min="0"></th>
-                <th>$$$$</th>
-                <th>C x $</th>
-              </tr>
-              <tr>
-                <th><label for="xg18" class="cotton">XG 18</label></th>
-                <th><input type="number" name="xg18" id="xg18" min="0"></th>
-                <th>$$$$</th>
-                <th>C x $</th>
-              </tr>
-              <tr>
-                <th><label for="xxg17" class="cotton">XXG 17</label></th>
-                <th><input type="number" name="xxg17" id="xxg17" min="0"></th>
-                <th>$$$$</th>
-                <th>C x $</th>
-              </tr>
-              <tr>
-                <th>Total cantidad:</th>
-                <th> Q </th>
-                <th>Total valor:</th>
-                <th>$$$$</th>
-              </tr>
+            <tr>
+              <th>Código</th>
+              <th>Cantidad</th>
+              <th>Precio x Bulto</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <th><label for="p24" class="cotton">P 24</label></th>
+              <th><input type="number" name="p24" id="p24" min="0"></th>
+              <th id="precioP24">2584.47</th>
+              <th id="subtotalP24"></th>
+            </tr>
+            <tr>
+              <th><label for="m24" class="cotton">M 24</label></th>
+              <th><input type="number" name="m24" id="m24" min="0"></th>
+              <th id="precioM24">2584.47</th>
+              <th id="subtotalM24"></th>
+            </tr>
+            <tr>
+              <th><label for="g20" class="cotton">G 20</label></th>
+              <th><input type="number" name="g20" id="g20" min="0"></th>
+              <th id="precioG20">2584.47</th>
+              <th id="subtotalG20"></th>
+            </tr>
+            <tr>
+              <th><label for="xg18" class="cotton">XG 18</label></th>
+              <th><input type="number" name="xg18" id="xg18" min="0"></th>
+              <th id="precioXg18">2584.47</th>
+              <th id="subtotalXg18"></th>
+            </tr>
+            <tr>
+              <th><label for="xxg17" class="cotton">XXG 17</label></th>
+              <th><input type="number" name="xxg17" id="xxg17" min="0"></th>
+              <th id="precioXxg17">2584.47</th>
+              <th id="subtotalXxg17"></th>
+            </tr>
           </table>
+          <table border="1" cellpadding="3%">
+            <tr>
+              <th>Total cantidad:</th>
+              <th id="qSubtotalMegapack"> 0 </th>
+            </tr>
+            <tr>
+              <th>Total valor:</th>
+              <th id="pSubtotalMegapack">$0</th>
+            </tr>
+          </table>
+        </div>
       </fieldset>
 <br>
       <fieldset>
@@ -90,80 +95,70 @@
             <tr>
               <th><label for="p44" class="cotton">P 44</label></th>
               <th><input type="number" name="p44" id="p44" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioP44">1885.95</th>
+              <th id="subtotalP44"></th>
             </tr>
             <tr>
               <th><label for="m44" class="cotton">M 44</label></th>
               <th><input type="number" name="m44" id="m44" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioM44">1885.95</th>
+              <th id="subtotalM44"></th>
             </tr>
             <tr>
               <th><label for="g38" class="cotton">G 38</label></th>
               <th><input type="number" name="g38" id="g38" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioG38">1885.95</th>
+              <th id="subtotalG38"></th>
             </tr>
             <tr>
               <th><label for="xg32" class="cotton">XG 32</label></th>
               <th><input type="number" name="xg32" id="xg32" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioXg32">1885.95</th>
+              <th id="subtotalXg32"></th>
             </tr>
             <tr>
               <th><label for="xxg30" class="cotton">XXG 30</label></th>
               <th><input type="number" name="xxg30" id="xxg30" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioXxg30">1885.95</th>
+              <th id="subtotalXxg30"></th>
             </tr>
+          </table>
+          <table border="1" cellpadding="3%">
             <tr>
               <th>Total cantidad:</th>
-              <th> Q </th>
-              <th>Total valor:</th>
-              <th>$$$$</th>
+              <th id="qSubtotalHiperpack"> 0 </th>
             </tr>
-            </table>
+            <tr>
+              <th>Total valor:</th>
+              <th id="pSubtotalHiperpack">$0</th>
+            </tr>
+          </table>
       </fieldset>
 <br>
       <fieldset>
         <legend id="pMegapackCollapser">PREMIUM COTTON MEGAPACK</legend>
           <table id="pMegapackCollapsable" border="1" cellpadding="3%">
             <tr>
+              <th>Código</th>
+              <th>Cantidad</th>
+              <th>Precio x Bulto</th>
+              <th>Total</th>
+            </tr>
+            <tr>
               <th><label for="pP30" class="premium">P 30</label></th>
               <th><input type="number" name="pP30" id="pP30" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioPP30">2407.29</th>
+              <th id="subtotalPP30"></th>
             </tr>
-            <!-- <tr>
-              <th><label for="pM44" class="cotton">M 44</label></th>
-              <th><input type="number" name="pM44" id="pM44" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
-            </tr>
-            <tr>
-              <th><label for="pG38" class="cotton">G 38</label></th>
-              <th><input type="number" name="pG38" id="pG38" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
-            </tr>
-            <tr>
-              <th><label for="pXg32" class="cotton">XG 32</label></th>
-              <th><input type="number" name="pXg32" id="pXg32" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
-            </tr>
-            <tr>
-              <th><label for="pXxg30" class="cotton">XXG 30</label></th>
-              <th><input type="number" name="pXxg30" id="pXxg30" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
-            </tr> DESHABILITADO- NO SE PRODUCE -->
+          </table>
+          <table border="1" cellpadding="3%">
             <tr>
               <th>Total cantidad:</th>
-              <th> Q </th>
+              <th id="qSubtotalPMegapack"> 0 </th>
+            </tr>
+            <tr>
               <th>Total valor:</th>
-              <th>$$$$</th>
+              <th id="pSubtotalPMegapack">$0</th>
             </tr>
           </table>
       </fieldset>
@@ -171,43 +166,47 @@
       <fieldset>
         <legend id="pHiperpackCollapser">PREMIUM COTTON HIPERPACK</legend>
           <table id="pHiperpackCollapsable" border="1" cellpadding="3%">
-            <!-- <tr>
-              <th><label for="p44" class="cotton">P 44</label></th>
-              <th><input type="number" name="p44" id="p44" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
-            </tr> DESHABILITADO - NO SE PRODUCE -->
+            <tr>
+              <th>Código</th>
+              <th>Cantidad</th>
+              <th>Precio x Bulto</th>
+              <th>Total</th>
+            </tr>
             <tr>
               <th><label for="pM52" class="premium">M 52</label></th>
               <th><input type="number" name="pM52" id="pM52" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioPM52">2407.29</th>
+              <th id="subtotalPM52"></th>
             </tr>
             <tr>
               <th><label for="pG44" class="premium">G 44</label></th>
               <th><input type="number" name="pG44" id="pG44" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioPG44">2407.29</th>
+              <th id="subtotalPG44"></th>
             </tr>
             <tr>
               <th><label for="pXg36" class="premium">XG 36</label></th>
               <th><input type="number" name="pXg36" id="pXg36" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioPXg36">2407.29</th>
+              <th id="subtotalPXg36"></th>
             </tr>
             <tr>
               <th><label for="pXxg34" class="premium">XXG 34</label></th>
               <th><input type="number" name="pXxg34" id="pXxg34" min="0"></th>
-              <th>$$$$</th>
-              <th>C x $</th>
+              <th id="precioPXxg34">2407.29</th>
+              <th id="subtotalPXxg34"></th>
             </tr>
+          </table>
+          <table border="1" cellpadding="3%">
             <tr>
               <th>Total cantidad:</th>
-              <th> Q </th>
-              <th>Total valor:</th>
-              <th>$$$$</th>
+              <th id="qSubtotalPHiperpack">0</th>
             </tr>
-            </table>
+            <tr>
+              <th>Total valor:</th>
+              <th id="pSubtotalPHiperpack">0$</th>
+            </tr>
+          </table>
       </fieldset>
 
     </body>
@@ -216,11 +215,11 @@
       <table>
         <tr>
           <th>Total cantidad:</th>
-          <th> Q </th>
+          <th id="qTotal">0</th>
         </tr>
         <tr>
           <th>Total valor:</th>
-          <th>$$$$</th>
+          <th id="pTotal">$0</th>
         </tr>
       </table>
     </fieldset>
