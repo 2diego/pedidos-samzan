@@ -71,7 +71,7 @@ window.addEventListener('load', () => { //premium hiperpack collapse()//
 p24.addEventListener('change' , () => { // subtotal precio//
   function megapackP24(q, precio) {
     q = Number(p24.value);
-    precio = 2584.47;
+    precio = 2688.41;
     document.getElementById("precioP24").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalP24").innerHTML = sub.toFixed(2);
@@ -83,7 +83,7 @@ p24.addEventListener('change' , () => { // subtotal precio//
 m24.addEventListener('change' , () => { // subtotal precio//
   function megapackM24(q, precio) {
     q = Number(m24.value);
-    precio = 2584.47;
+    precio = 2688.41;
     document.getElementById("precioM24").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalM24").innerHTML = sub.toFixed(2);
@@ -95,7 +95,7 @@ m24.addEventListener('change' , () => { // subtotal precio//
 g20.addEventListener('change' , () => { // subtotal precio//
   function megapackG20(q, precio) {
     q = Number(g20.value);
-    precio = 2584.47;
+    precio = 2688.41;
     document.getElementById("precioG20").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalG20").innerHTML = sub.toFixed(2);
@@ -107,7 +107,7 @@ g20.addEventListener('change' , () => { // subtotal precio//
 xg18.addEventListener('change' , () => { // subtotal precio//
   function megapackXg18(q, precio) {
     q = Number(xg18.value);
-    precio = 2584.47;
+    precio = 2688.41;
     document.getElementById("precioXg18").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalXg18").innerHTML = sub.toFixed(2);
@@ -119,7 +119,7 @@ xg18.addEventListener('change' , () => { // subtotal precio//
 xxg17.addEventListener('change' , () => { // subtotal precio//
   function megapackXxg17(q, precio) {
     q = Number(xxg17.value);
-    precio = 2584.47;
+    precio = 2688.41;
     document.getElementById("precioXxg17").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalXxg17").innerHTML = sub.toFixed(2);
@@ -151,7 +151,7 @@ window.addEventListener('change', ()=> { //Megapack subtotal precio//
 p44.addEventListener('change' , () => { // subtotal precio//
   function hiperpackP44(q, precio) {
     q = Number(p44.value);
-    precio = 1885.95;
+    precio = 1939.24;
     document.getElementById("precioP44").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalP44").innerHTML = sub.toFixed(2);
@@ -163,7 +163,7 @@ p44.addEventListener('change' , () => { // subtotal precio//
 m44.addEventListener('change' , () => { // subtotal precio//
   function hiperpackM44(q, precio) {
     q = Number(m44.value);
-    precio = 1885.95;
+    precio = 1939.24;
     document.getElementById("precioM44").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalM44").innerHTML = sub.toFixed(2);
@@ -175,7 +175,7 @@ m44.addEventListener('change' , () => { // subtotal precio//
 g38.addEventListener('change' , () => { // subtotal precio//
   function hiperpackG38(q, precio) {
     q = Number(g38.value);
-    precio = 1885.95;
+    precio = 1939.24;
     document.getElementById("precioG38").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalG38").innerHTML = sub.toFixed(2);
@@ -187,7 +187,7 @@ g38.addEventListener('change' , () => { // subtotal precio//
 xg32.addEventListener('change' , () => { // subtotal precio//
   function hiperpackXg32(q, precio) {
     q = Number(xg32.value);
-    precio = 1885.95;
+    precio = 1939.24;
     document.getElementById("precioXg32").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalXg32").innerHTML = sub.toFixed(2);
@@ -199,7 +199,7 @@ xg32.addEventListener('change' , () => { // subtotal precio//
 xxg30.addEventListener('change' , () => { // subtotal precio//
   function hiperpackXxg30(q, precio) {
     q = Number(xxg30.value);
-    precio = 1885.95;
+    precio = 1939.24;
     document.getElementById("precioXxg30").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalXxg30").innerHTML = sub.toFixed(2);
@@ -231,7 +231,7 @@ window.addEventListener('change', ()=> { // Hiperpack subtotal precio//
 pP30.addEventListener('change' , () => { // subtotal precio//
   function pMegapackP30(q, precio) {
     q = Number(pP30.value);
-    precio = 3453.78;
+    precio = 3592.69;
     document.getElementById("precioPP30").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalPP30").innerHTML = sub.toFixed(2);
@@ -263,7 +263,7 @@ window.addEventListener('change', ()=> { // pMegapack subtotal precio//
 pM52.addEventListener('change' , () => { // subtotal precio//
   function hiperpackPM52(q, precio) {
     q = Number(pM52.value);
-    precio = 2407.29;
+    precio = 3018.68;
     document.getElementById("precioPM52").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalPM52").innerHTML = sub.toFixed(2);
@@ -275,7 +275,7 @@ pM52.addEventListener('change' , () => { // subtotal precio//
 pG44.addEventListener('change' , () => { // subtotal precio//
   function hiperpackPG44(q, precio) {
     q = Number(pG44.value);
-    precio = 2407.29;
+    precio = 3018.68;
     document.getElementById("precioPG44").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalPG44").innerHTML = sub.toFixed(2);
@@ -287,7 +287,7 @@ pG44.addEventListener('change' , () => { // subtotal precio//
 pXg36.addEventListener('change' , () => { // subtotal precio//
   function hiperpackPXg36(q, precio) {
     q = Number(pXg36.value);
-    precio = 2407.29;
+    precio = 3018.68;
     document.getElementById("precioPXg36").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalPXg36").innerHTML = sub.toFixed(2);
@@ -299,7 +299,7 @@ pXg36.addEventListener('change' , () => { // subtotal precio//
 pXxg34.addEventListener('change' , () => { // subtotal precio//
   function hiperpackPXxg34(q, precio) {
     q = Number(pXxg34.value);
-    precio = 2407.29;
+    precio = 3018.68;
     document.getElementById("precioPXxg34").innerHTML = precio;
     let sub = q * precio;
     document.getElementById("subtotalPXxg34").innerHTML = sub.toFixed(2);
@@ -343,5 +343,5 @@ window.addEventListener('change', () => { // Total precio //
   let pPHiperpack = Number(document.getElementById("pSubtotalPHiperpack").innerHTML.slice(1));
   let pPMegapack = Number(document.getElementById("pSubtotalPMegapack").innerHTML.slice(1));
 
-  document.getElementById("pTotal").innerHTML = "$" + (pHiperpack + pMegapack + pPHiperpack + pPMegapack);
+  document.getElementById("pTotal").innerHTML = "$" + (pHiperpack + pMegapack + pPHiperpack + pPMegapack).toFixed(2);
 });
