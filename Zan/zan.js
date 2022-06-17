@@ -4,6 +4,31 @@ let month = date.getMonth() + 1;
 let year = date.getFullYear();
 document.getElementById("date").innerHTML = day + " / " + month + " / " + year;
 
+let precios = {
+  megapack: 2688.41,
+  hiperpack: 1939.24,
+  pMegapack: 3592.69,
+  pHiperpack: 3018.68
+};
+
+window.addEventListener('load', () => { // load precios //
+  document.getElementById("precioP24").innerHTML = precios.megapack;
+  document.getElementById("precioM24").innerHTML = precios.megapack;
+  document.getElementById("precioG20").innerHTML = precios.megapack;
+  document.getElementById("precioXg18").innerHTML = precios.megapack;
+  document.getElementById("precioXxg17").innerHTML = precios.megapack;
+  document.getElementById("precioP44").innerHTML = precios.hiperpack;
+  document.getElementById("precioM44").innerHTML = precios.hiperpack;
+  document.getElementById("precioG38").innerHTML = precios.hiperpack;
+  document.getElementById("precioXg32").innerHTML = precios.hiperpack;
+  document.getElementById("precioXxg30").innerHTML = precios.hiperpack;
+  document.getElementById("precioPP30").innerHTML = precios.pMegapack;
+  document.getElementById("precioPM52").innerHTML = precios.pHiperpack;
+  document.getElementById("precioPG44").innerHTML = precios.pHiperpack;
+  document.getElementById("precioPXg36").innerHTML = precios.pHiperpack;
+  document.getElementById("precioPXxg34").innerHTML = precios.pHiperpack;
+})
+
 window.addEventListener('load', () => { //hiperpack collapse()//
   const collapser = document.getElementById('hiperpackCollapser');
   const collapsable = document.getElementById('hiperpackCollapsable');
@@ -68,64 +93,61 @@ window.addEventListener('load', () => { //premium hiperpack collapse()//
   collapser.addEventListener('click', collapse);
 });
 
-p24.addEventListener('change' , () => { // subtotal precio//
-  function megapackP24(q, precio) {
-    q = Number(p24.value);
-    precio = 2688.41;
-    document.getElementById("precioP24").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalP24").innerHTML = sub.toFixed(2);
-  };
-
-  megapackP24();
-});
-
-m24.addEventListener('change' , () => { // subtotal precio//
-  function megapackM24(q, precio) {
-    q = Number(m24.value);
-    precio = 2688.41;
-    document.getElementById("precioM24").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalM24").innerHTML = sub.toFixed(2);
- };
-  
-  megapackM24();
-});
-  
-g20.addEventListener('change' , () => { // subtotal precio//
-  function megapackG20(q, precio) {
-    q = Number(g20.value);
-    precio = 2688.41;
-    document.getElementById("precioG20").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalG20").innerHTML = sub.toFixed(2);
-  };
-  
-  megapackG20();
-});
-
-xg18.addEventListener('change' , () => { // subtotal precio//
-  function megapackXg18(q, precio) {
-    q = Number(xg18.value);
-    precio = 2688.41;
-    document.getElementById("precioXg18").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalXg18").innerHTML = sub.toFixed(2);
+window.addEventListener('change', () => { // subtotal precio x codigo//
+  function subtotalPrecios() {
+    let cantidad = {
+      p24: Number(p24.value),
+      m24: Number(m24.value),
+      g20: Number(g20.value),
+      xg18: Number(xg18.value),
+      xxg17: Number(xxg17.value),
+      p44: Number(p44.value),
+      m44: Number(m44.value),
+      g38: Number(g38.value),
+      xg32: Number(xg32.value),
+      xxg30: Number(xxg30.value),
+      pP30: Number(pP30.value),
+      pM52: Number(pM52.value),
+      pG44: Number(pG44.value),
+      pXg36: Number(pXg36.value),
+      pXxg34: Number(pXxg34.value),
+    };
+    let subtotal = {
+      p24: cantidad.p24 * precios.megapack,
+      m24: cantidad.m24 * precios.megapack,
+      g20: cantidad.g20 * precios.megapack,
+      xg18: cantidad.xg18 * precios.megapack,
+      xxg17: cantidad.xxg17 * precios.megapack,
+      p44: cantidad.p44 * precios.megapack,
+      m44: cantidad.m44 * precios.megapack,
+      g38: cantidad.g38 * precios.megapack,
+      xg32: cantidad.xg32 * precios.megapack,
+      xxg30: cantidad.xxg30 * precios.megapack,
+      pP30: cantidad.pP30 * precios.megapack,
+      pM52: cantidad.pM52 * precios.megapack,
+      pG44: cantidad.pG44 * precios.megapack,
+      pXg36: cantidad.pXg36 * precios.megapack,
+      pXxg34: cantidad.pXxg34 * precios.megapack,
     };
 
-    megapackXg18();
-});
-
-xxg17.addEventListener('change' , () => { // subtotal precio//
-  function megapackXxg17(q, precio) {
-    q = Number(xxg17.value);
-    precio = 2688.41;
-    document.getElementById("precioXxg17").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalXxg17").innerHTML = sub.toFixed(2);
+    document.getElementById("subtotalP24").innerHTML = subtotal.p24.toFixed(2);
+    document.getElementById("subtotalM24").innerHTML = subtotal.m24.toFixed(2);
+    document.getElementById("subtotalG20").innerHTML = subtotal.g20.toFixed(2);
+    document.getElementById("subtotalXg18").innerHTML = subtotal.xg18.toFixed(2);
+    document.getElementById("subtotalXxg17").innerHTML = subtotal.xxg17.toFixed(2);
+    document.getElementById("subtotalP44").innerHTML = subtotal.p44.toFixed(2);
+    document.getElementById("subtotalM44").innerHTML = subtotal.m44.toFixed(2);
+    document.getElementById("subtotalG38").innerHTML = subtotal.g38.toFixed(2);
+    document.getElementById("subtotalXg32").innerHTML = subtotal.xg32.toFixed(2);
+    document.getElementById("subtotalXxg30").innerHTML = subtotal.xxg30.toFixed(2);
+    document.getElementById("subtotalPP30").innerHTML = subtotal.pP30.toFixed(2);
+    document.getElementById("subtotalPM52").innerHTML = subtotal.pM52.toFixed(2);
+    document.getElementById("subtotalPG44").innerHTML = subtotal.pG44.toFixed(2);
+    document.getElementById("subtotalPXg36").innerHTML = subtotal.pXg36.toFixed(2);
+    document.getElementById("subtotalPXxg34").innerHTML = subtotal.pXxg34.toFixed(2);
   };
 
-    megapackXxg17();
+  subtotalPrecios();
 });
 
 window.addEventListener('change', () => { // Megapack subtotal cantidad //
@@ -148,66 +170,6 @@ window.addEventListener('change', ()=> { //Megapack subtotal precio//
   pSubtotalMegapack();
 }); 
 
-p44.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackP44(q, precio) {
-    q = Number(p44.value);
-    precio = 1939.24;
-    document.getElementById("precioP44").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalP44").innerHTML = sub.toFixed(2);
-  };
-
-  hiperpackP44();
-});
-
-m44.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackM44(q, precio) {
-    q = Number(m44.value);
-    precio = 1939.24;
-    document.getElementById("precioM44").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalM44").innerHTML = sub.toFixed(2);
- };
-  
-  hiperpackM44();
-});
-  
-g38.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackG38(q, precio) {
-    q = Number(g38.value);
-    precio = 1939.24;
-    document.getElementById("precioG38").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalG38").innerHTML = sub.toFixed(2);
-  };
-  
-  hiperpackG38();
-});
-
-xg32.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackXg32(q, precio) {
-    q = Number(xg32.value);
-    precio = 1939.24;
-    document.getElementById("precioXg32").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalXg32").innerHTML = sub.toFixed(2);
-    };
-
-    hiperpackXg32();
-});
-
-xxg30.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackXxg30(q, precio) {
-    q = Number(xxg30.value);
-    precio = 1939.24;
-    document.getElementById("precioXxg30").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalXxg30").innerHTML = sub.toFixed(2);
-  };
-
-    hiperpackXxg30();
-});
-
 window.addEventListener('change', () => { // Hiperpack subtotal cantidad //
   function qSubtotalHiperpack(cantidades) {
     let qSubHiperpack = Number(p44.value) + Number(m44.value) + Number(g38.value) + Number(xg32.value) + Number(xxg30.value);
@@ -228,18 +190,6 @@ window.addEventListener('change', ()=> { // Hiperpack subtotal precio//
   pSubtotalHiperpack();
 }); 
 
-pP30.addEventListener('change' , () => { // subtotal precio//
-  function pMegapackP30(q, precio) {
-    q = Number(pP30.value);
-    precio = 3592.69;
-    document.getElementById("precioPP30").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalPP30").innerHTML = sub.toFixed(2);
-  };
-
-  pMegapackP30();
-});
-
 window.addEventListener('change', () => { // pMegapack subtotal cantidad //
   function qSubtotalPMegapack(cantidades) {
     let qSubPMegapack = Number(pP30.value);
@@ -259,54 +209,6 @@ window.addEventListener('change', ()=> { // pMegapack subtotal precio//
 
   pSubtotalPMegapack();
 }); 
-
-pM52.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackPM52(q, precio) {
-    q = Number(pM52.value);
-    precio = 3018.68;
-    document.getElementById("precioPM52").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalPM52").innerHTML = sub.toFixed(2);
- };
-  
-  hiperpackPM52();
-});
-  
-pG44.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackPG44(q, precio) {
-    q = Number(pG44.value);
-    precio = 3018.68;
-    document.getElementById("precioPG44").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalPG44").innerHTML = sub.toFixed(2);
- };
-  
-  hiperpackPG44();
-});
-
-pXg36.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackPXg36(q, precio) {
-    q = Number(pXg36.value);
-    precio = 3018.68;
-    document.getElementById("precioPXg36").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalPXg36").innerHTML = sub.toFixed(2);
- };
-  
-  hiperpackPXg36();
-});
-
-pXxg34.addEventListener('change' , () => { // subtotal precio//
-  function hiperpackPXxg34(q, precio) {
-    q = Number(pXxg34.value);
-    precio = 3018.68;
-    document.getElementById("precioPXxg34").innerHTML = precio;
-    let sub = q * precio;
-    document.getElementById("subtotalPXxg34").innerHTML = sub.toFixed(2);
- };
-  
-  hiperpackPXxg34();
-});
 
 window.addEventListener('change', () => { // pHiperpack subtotal cantidad //
   function qSubtotalPHiperpack(cantidades) {
