@@ -1,6 +1,24 @@
 body {
   background-color: rgba(108, 119, 129, 0.582);
   text-align: center;
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E0BAQFVFEtxIsgiew/company-logo_200_200/0/1584458762266?e=2147483647&v=beta&t=HX9p9dJl-I6A1E4CVBQ6bqqeTEavZRQe94teWtEgelk");
+}
+
+form {
+  border: solid 2px black;
+  width: fit-content;
+  max-width: 60%;
+  min-width: 40%;
+  margin: 0 auto;
+  background-color: rgb(236, 236, 236);
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin: 5px auto;
 }
 
 select {
@@ -12,8 +30,9 @@ option {
   font-size: large;
 }
 
-.legend {
-  font-size: x-large;
+legend {
+  font-size: large;
+  font-weight: bold;  
   width: 85%;
   border: 1px solid black;
   padding: 3px 6px;
@@ -26,20 +45,40 @@ legend::after {
   float: right;
 }
 
-.codigo {
-  font-weight: bold;
-  padding: 3px 0px 4px 5px;
-  margin: 0px -5px 0px -5px;
-  border: 1px solid black;
-}
-
 fieldset {
   width: fit-content;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 input {
   align-items: center;
   height: 20px;
   width: 105px;
+}
+
+button, .submit {
+  font-size: larger;
+  margin: 5px;
+  height:fit-content;
+  width: fit-content;
+}
+
+#clientes {
+  width: fit-content;
+  min-width: 80%;
+}
+
+#date {
+  border: solid 1px black;
+  display: inline;
+  float: right;
+  font-size: larger;
+  margin: 5px;
+  background-color: white;
+}
+
+#localidad {
+  display: inline;
+  float: left;
+  margin: 0px auto 5px 10%;
 }
