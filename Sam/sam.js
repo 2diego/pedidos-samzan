@@ -4,7 +4,8 @@ let month = date.getMonth() + 1;
 let year = date.getFullYear();
 document.getElementById("date").innerHTML = day + " / " + month + " / " + year;
 
-let precio = {
+
+const precio = {
   100: 1270.42,
   105: 1959.81,
   127: 942.97,
@@ -64,6 +65,18 @@ let precio = {
 };
 
 window.addEventListener('load', () => { // load precios //
+
+  for (const key in precio) {
+    if (precio.hasOwnProperty.call(precio, key)) {
+      let id = "precio" + key;
+  
+      document.getElementById(id).innerHTML = precio[key];
+    };
+  };
+});
+
+  /* LOAD PRECIOS ANTES
+  window.addEventListener('load', () => {
   document.getElementById("precio100").innerHTML = precio[100];
   document.getElementById("precio105").innerHTML = precio[105];
   document.getElementById("precio127").innerHTML = precio[127];
@@ -120,7 +133,7 @@ window.addEventListener('load', () => { // load precios //
   document.getElementById("precio1101").innerHTML = precio[1101];
   document.getElementById("precio1102").innerHTML = precio[1102];
   document.getElementById("precio11032").innerHTML = precio[11032];
-});
+  } */
 
 window.addEventListener('load', () => { // higienicos collapse //
   const collapser = document.getElementById('higienicosCollapser');
@@ -182,6 +195,17 @@ window.addEventListener('load', () => { //bobinas collapse //
   collapser.addEventListener('click', collapse);
 });
 
+window.addEventListener('change', () => { // subtotal precio x codigo//
+  for (const key in precio) {
+    if (precio.hasOwnProperty.call(precio, key)) {
+      const id = "subtotal" + key;
+      
+      document.getElementById(id).innerHTML = (Number(document.getElementById(key).value) * (Number(precio[key]))).toFixed(2);
+    };
+  };
+});
+
+/* subtotal precio x codigo ANTES 
 window.addEventListener('change', () => { // subtotal precio x codigo//
   function subtotalPrecios() {
     let cantidad = {
@@ -360,7 +384,7 @@ window.addEventListener('change', () => { // subtotal precio x codigo//
   };
 
   subtotalPrecios();
-});
+}); */
 
 window.addEventListener('change', () => { // higienicos subtotal precio //
   function pSubtotalHigienicos(precios) {
