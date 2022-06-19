@@ -4,7 +4,7 @@ let month = date.getMonth() + 1;
 let year = date.getFullYear();
 document.getElementById("date").innerHTML = day + " / " + month + " / " + year;
 
-let precios = {
+const precios = {
   megapack: 2688.41,
   hiperpack: 1939.24,
   pMegapack: 3592.69,
@@ -118,16 +118,16 @@ window.addEventListener('change', () => { // subtotal precio x codigo//
       g20: cantidad.g20 * precios.megapack,
       xg18: cantidad.xg18 * precios.megapack,
       xxg17: cantidad.xxg17 * precios.megapack,
-      p44: cantidad.p44 * precios.megapack,
-      m44: cantidad.m44 * precios.megapack,
-      g38: cantidad.g38 * precios.megapack,
-      xg32: cantidad.xg32 * precios.megapack,
-      xxg30: cantidad.xxg30 * precios.megapack,
-      pP30: cantidad.pP30 * precios.megapack,
-      pM52: cantidad.pM52 * precios.megapack,
-      pG44: cantidad.pG44 * precios.megapack,
-      pXg36: cantidad.pXg36 * precios.megapack,
-      pXxg34: cantidad.pXxg34 * precios.megapack,
+      p44: cantidad.p44 * precios.hiperpack,
+      m44: cantidad.m44 * precios.hiperpack,
+      g38: cantidad.g38 * precios.hiperpack,
+      xg32: cantidad.xg32 * precios.hiperpack,
+      xxg30: cantidad.xxg30 * precios.hiperpack,
+      pP30: cantidad.pP30 * precios.pMegapack,
+      pM52: cantidad.pM52 * precios.pHiperpack,
+      pG44: cantidad.pG44 * precios.pHiperpack,
+      pXg36: cantidad.pXg36 * precios.pHiperpack,
+      pXxg34: cantidad.pXxg34 * precios.pHiperpack,
     };
 
     document.getElementById("subtotalP24").innerHTML = subtotal.p24.toFixed(2);
