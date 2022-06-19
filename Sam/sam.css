@@ -82,3 +82,7 @@ button, .submit {
   float: left;
   margin: 0px auto 5px 10%;
 }
+
+#observaciones {
+  min-width: 80%;
+}
