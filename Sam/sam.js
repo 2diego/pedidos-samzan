@@ -197,11 +197,8 @@ window.addEventListener('load', () => { //bobinas collapse //
 
 window.addEventListener('change', () => { // subtotal precio x codigo//
   for (const key in precio) {
-    if (precio.hasOwnProperty.call(precio, key)) {
-      const id = "subtotal" + key;
-      
+      const id = "subtotal" + key; 
       document.getElementById(id).innerHTML = (Number(document.getElementById(key).value) * (Number(precio[key]))).toFixed(2);
-    };
   };
 });
 
